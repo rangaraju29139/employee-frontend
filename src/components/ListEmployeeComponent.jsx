@@ -1,34 +1,3 @@
-# Employee frontend
-
-## procedure following to build the react app
-
-```
-npx create-react-app employee-frontend
-cd employee-frontend
-npm start # to start the server
-```
-
-- Install the bootstrap
-  ` npm install bootstrap --save`
-
-- Import the boostrap into the index.js file
-
-```javascript
-import "bootstrap/dist/css/bootstrap.min.css";
-```
-
-- create the components folder under the src folder
-
-- create the ListEmployees Folder under the src folder.
-
-[!NOTE] suggestion to checkout the ** react code snippets vs code plugin**
-
-- to create the react code quickly
-  - just by typing **rcc** to show the suggestion to create the react class code component.
-
-## update the ListEmployeeComponent
-
-```javascript
 import React, { Component } from "react";
 
 class ListEmployeeComponent extends Component {
@@ -70,4 +39,3 @@ class ListEmployeeComponent extends Component {
 }
 
 export default ListEmployeeComponent;
-```
