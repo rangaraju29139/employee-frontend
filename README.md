@@ -76,6 +76,12 @@ export default ListEmployeeComponent;
 
 ` npm install axios`
 
+## cretaing the ListEmployeeService and ListEmployeeComponent to make th api call
 
-## cretaing the ListEmployeeService  and ListEmployeeComponent to make th api call
-- 
+## added the header and footer component and added that to the app.js
+
+## installing the react router dom
+
+`npm install react-router-dom`
+
+-
