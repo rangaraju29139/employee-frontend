@@ -75,3 +75,7 @@ export default ListEmployeeComponent;
 ## install the axios for making the api calls
 
 ` npm install axios`
+
+
+## cretaing the ListEmployeeService  and ListEmployeeComponent to make th api call
+- 
