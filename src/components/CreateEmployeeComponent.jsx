@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CreateEmployeeService from "../services/CreateEmployeeService";
 
 class CreateEmployeeComponent extends Component {
   constructor(props) {
@@ -34,6 +35,10 @@ class CreateEmployeeComponent extends Component {
       email: this.state.email,
     };
     console.log("employee =>" + JSON.stringify(employee));
+
+    CreateEmployeeService.createEmployee(employee).then((res) => {
+      window.location.replace("/employees/");
+    });
   }
   cancelEmployee(event) {
     event.preventDefault();
