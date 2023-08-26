@@ -15,10 +15,19 @@ class ListEmployeeComponent extends Component {
     });
   }
 
+  addEmployee() {
+    window.location.replace("/create-employee");
+  }
+
   render() {
     return (
       <div>
         <h2 className="text-center">Employee list</h2>
+        <div className="row">
+          <button className="btn btn-primary" onClick={this.addEmployee}>
+            Add Employee
+          </button>
+        </div>
         <div className="row">
           <table className="table table-striped table-bordered">
             <thead>
