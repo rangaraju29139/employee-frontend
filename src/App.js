@@ -4,7 +4,7 @@ import HeaderComponent from "./components/HeaderComponent";
 import ListEmployeeComponent from "./components/ListEmployeeComponent";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CreateEmployeeComponent from "./components/CreateEmployeeComponent";
-
+import UpdateEmployeeComponent from "./components/UpdateEmployeeComponent";
 function App() {
   return (
     <>
@@ -12,11 +12,21 @@ function App() {
         <HeaderComponent />
         <div className="container">
           <Routes>
-            <Route path="/" exact Component={ListEmployeeComponent} />
-            <Route path="/employees" exact Component={ListEmployeeComponent} />
+            <Route path="/" exact element={<ListEmployeeComponent />} />
+            <Route
+              path="/employees"
+              exact
+              element={<ListEmployeeComponent />}
+            />
             <Route
               path="/create-employee"
-              Component={CreateEmployeeComponent}
+              element={<CreateEmployeeComponent />}
+            />
+
+            <Route
+              path="/update-employee/:id"
+              {...this.props}
+              element={<UpdateEmployeeComponent />}
             />
           </Routes>
         </div>
